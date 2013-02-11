@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+   	<TextView android:id="@+id/requester"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+      		android:gravity="center"/>
+   	
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="fill_parent">
+		
+        <ImageView
+            android:id="@+id/accept_req"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="6dip"
+            android:contentDescription="@string/accept_desc"
+            android:src="@drawable/accept_option" />
+        
+        <ImageView android:id="@+id/deny_req"
+            android:contentDescription="@string/deny_desc"
+	    	android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:layout_marginRight="6dip"
+	        android:src="@drawable/deny_option" />
+    </LinearLayout>
+    
+
+</LinearLayout>
